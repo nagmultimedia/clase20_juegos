@@ -56,6 +56,14 @@
     gap: 2rem;
     padding-right: 24px;
     font-weight: bold;
+	color: white;
+	transition: all;
+  }
+
+  header nav ul li:hover{
+	  color: #d01418;
+	  cursor: pointer;
+	  transition-duration: 0.2s;
   }
 
   /* SLIDE */
@@ -86,6 +94,12 @@
     color: var(--thirdColor);
     padding: 16px 61px;
     margin: 50px 0px;
+	transition: all;
+  }
+
+  .banner a:hover {
+	transition-duration: 0.4s;
+	background-color: orangered;
   }
 
   /* PRODUCTOS */
@@ -122,11 +136,20 @@
   .product__container .card__img {
     border-bottom: 1px solid #22222257;
     width: 100%;
+	transition: all;
+	transition-timing-function: ease-out;
   }
   .product__container .card__img img {
     display: flex;
     margin: 30px auto;
   }
+
+  .product__container .card__img img:hover {
+	  transition-duration: 1.5s;
+	  transform: scale(1.2);
+	  cursor: pointer;
+  }
+
   
   .product__container .card .card__info {
     padding-bottom: 21px;
@@ -160,7 +183,17 @@
     border-radius: 5px;
     width: 450px;
     height: 135px;
+	transform: all;
   }
+
+ 
+  .container__estrella .producto__estrella:hover {
+	opacity: 0.8;
+	transition-duration: 0.4s;
+	cursor: pointer;
+  }
+
+
   .container__estrella .producto__estrella:nth-child(2) {
     background: url("../img/banner2.jpg");
     background-size: cover;
@@ -201,10 +234,18 @@
   }
   .footer__redes div {
     align-self: center;
+	transform: all;
   }
   .footer__redes div i {
     margin: 20px;
   }
+
+  .footer__redes div i:hover {
+	color: white;
+	transition-duration: 0.5s;
+	cursor: pointer;
+  }
+
   footer .footer__redes .fa-twitter,
   .fa-facebook-f,
   .fa-instagram {
